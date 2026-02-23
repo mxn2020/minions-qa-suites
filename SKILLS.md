@@ -1,6 +1,12 @@
 ---
 name: minions-qa-suites
-description: Test suite definitions, test cases, and assertions for validating clawspace toolboxes
+id: OC-0151
+version: 1.0.0
+description: "Test suite definitions, test cases, and assertions for validating clawspace toolboxes"
+category: dev-tools
+subcategory: testing
+tags: ["minion", "dev-tools", "testing"]
+comments:
 ---
 
 # minions-qa-suites — Agent Skills
