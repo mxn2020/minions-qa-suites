@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "minions-qa-suites"
-version = "0.1.0"
+version = "0.2.0"
 description = "Test suite definitions, test cases, and assertions for validating clawspace toolboxes"
 readme = "README.md"
 license = { text = "MIT" }
