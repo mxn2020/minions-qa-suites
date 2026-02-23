@@ -1,0 +1,28 @@
+{
+    "name": "minions-qa-suites-workspace",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Test suite definitions, test cases, and assertions for validating clawspace toolboxes",
+    "type": "module",
+    "license": "MIT",
+    "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
+    "scripts": {
+        "build": "pnpm --filter @minions-qa-suites/sdk run build && pnpm --filter @minions-qa-suites/cli run build && pnpm --filter @minions-qa-suites/docs run build && pnpm --filter @minions-qa-suites/blog run build && pnpm --filter @minions-qa-suites/web run build",
+        "deploy:blog": "pnpm --filter @minions-qa-suites/blog run build && netlify deploy --dir apps/blog/dist --prod",
+        "deploy:docs": "pnpm --filter @minions-qa-suites/docs run build && netlify deploy --dir apps/docs/dist --prod",
+        "deploy:web": "pnpm --filter @minions-qa-suites/web run build && netlify deploy --dir apps/web/dist --prod",
+        "test": "pnpm --filter @minions-qa-suites/sdk run test",
+        "lint": "pnpm --filter @minions-qa-suites/sdk run build && pnpm --filter @minions-qa-suites/sdk run lint && pnpm --filter @minions-qa-suites/cli run lint",
+        "deploy": "pnpm run deploy:blog"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.3"
+    }
+}

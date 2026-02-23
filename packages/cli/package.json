@@ -1,0 +1,38 @@
+{
+  "name": "@minions-qa-suites/cli",
+  "version": "0.1.0",
+  "description": "CLI for minions-qa-suites — Test suite definitions, test cases, and assertions for validating clawspace toolboxes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxn2020/minions-qa-suites"
+  },
+  "homepage": "https://qa-suites.minions.help",
+  "keywords": ["qa-suites","ai","minions"],
+  "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+  "type": "module",
+  "bin": {
+    "qa-suites": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "dev": "node --loader ts-node/esm src/index.ts"
+  },
+  "dependencies": {
+    "@minions-qa-suites/sdk": "workspace:*",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "inquirer": "^13.2.5",
+    "minions-sdk": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}
