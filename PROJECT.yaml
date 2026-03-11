@@ -1,0 +1,15 @@
+name: minions-qa-suites-workspace
+project_scope: main
+project_type: monorepo
+description: "Test suite definitions, test cases, and assertions for validating clawspace toolboxes"
+tier: idea
+lane: minions
+priority: medium
+oss: true
+stack: [typescript]
+repo: "https://github.com/mxn2020/minions-qa-suites"
+deploy_url: null
+last_active: 2026-02-23
+tags: [minion, toolbox, ai-agent, automation, minions, qa, suites]
+notes: null
+id: f133440f-59c4-4085-bddb-15e21ec96f85
