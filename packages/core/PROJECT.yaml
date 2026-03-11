@@ -6,3 +6,4 @@ description: "Test suite definitions, test cases, and assertions for validating 
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox

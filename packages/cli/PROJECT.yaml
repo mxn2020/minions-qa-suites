@@ -6,3 +6,4 @@ description: "CLI for minions-qa-suites — Test suite definitions, test cases, 
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox
