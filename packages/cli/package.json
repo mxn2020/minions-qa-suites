@@ -1,6 +1,6 @@
 {
   "name": "@minions-qa-suites/cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI for minions-qa-suites — Test suite definitions, test cases, and assertions for validating clawspace toolboxes",
   "license": "MIT",
   "repository": {
